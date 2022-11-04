@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "789713434914",
+    "project_id": "numerologyyantra",
+    "storage_bucket": "numerologyyantra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789713434914:android:6ea62a88c5a2e5e5060d7b",
+        "android_client_info": {
+          "package_name": "com.numerology.yantra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789713434914-r4dd6tofnh45h7pmkv1ucn3vupktjb25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGYHXQq1pQRmc5uo6-fqjZz5pmFyWe0d0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789713434914-r4dd6tofnh45h7pmkv1ucn3vupktjb25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
