@@ -37,6 +37,7 @@ class HomeListModel {
   class Desc {
   String? id;
   String? box;
+  String? boxName;
   String? no;
   String? detail;
   String? detailHindi;
@@ -47,6 +48,7 @@ class HomeListModel {
   Desc(
   {this.id,
   this.box,
+  this.boxName,
   this.no,
   this.detail,
   this.detailHindi,
@@ -56,6 +58,7 @@ class HomeListModel {
   Desc.fromJson(Map<String, dynamic> json) {
   id = json['id'];
   box = json['box'];
+  boxName = json['box_name'];
   no = json['no'];
   detail = json['detail'];
   detailHindi = json['detail_hindi'];
@@ -67,6 +70,7 @@ class HomeListModel {
   final Map<String, dynamic> data = new Map<String, dynamic>();
   data['id'] = this.id;
   data['box'] = this.box;
+  data['box_name'] = this.boxName;
   data['no'] = this.no;
   data['detail'] = this.detail;
   data['detail_hindi'] = this.detailHindi;

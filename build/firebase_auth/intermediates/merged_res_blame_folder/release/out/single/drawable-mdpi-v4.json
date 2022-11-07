@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\7060f7540de48121eeec1565e37e8651\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\5f12752260cf00a86b9ffb0c3fa7ece3\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_light_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\googleg_disabled_color_18.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\5f12752260cf00a86b9ffb0c3fa7ece3\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\googleg_standard_color_18.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\5f12752260cf00a86b9ffb0c3fa7ece3\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-mdpi-v4\\googleg_standard_color_18.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\7060f7540de48121eeec1565e37e8651\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\7060f7540de48121eeec1565e37e8651\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\5f12752260cf00a86b9ffb0c3fa7ece3\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\5f12752260cf00a86b9ffb0c3fa7ece3\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\5f12752260cf00a86b9ffb0c3fa7ece3\\transformed\\jetified-play-services-base-17.1.0\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\7060f7540de48121eeec1565e37e8651\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_auth\\intermediates\\merged_res\\release\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\7060f7540de48121eeec1565e37e8651\\transformed\\core-1.6.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    }
+]
