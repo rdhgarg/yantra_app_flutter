@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:numerology_yantra/ui/login_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
@@ -15,22 +16,24 @@ import 'package:otp_text_field/style.dart';
 
 class OtpScreen extends StatefulWidget {
   String  phone="";
-  OtpScreen(this.phone) ;
+  String type ="";
+  OtpScreen(this.phone,this.type) ;
 
   @override
-  State<OtpScreen> createState() => _OtpScreen(this.phone);
+  State<OtpScreen> createState() => _OtpScreen(this.phone,this.type);
 }
 
 
 
 class _OtpScreen extends State<OtpScreen> {
   String phone="";
+  String type="";
   String trimmed ="";
   String strPin = "";
   late SharedPreferences prefs;
 
 
-  _OtpScreen(this.phone);
+  _OtpScreen(this.phone,this.type);
 
   var _otp_verify_api = APIHelper.BASE_URL+"otp-verify";
 
@@ -46,19 +49,21 @@ class _OtpScreen extends State<OtpScreen> {
     final apiResponse = OtpVerifyDataModel.fromJson(resBody);
     setState(() {
       if (apiResponse.status == true) {
-        prefs.setBool("isLogin", true);
-        prefs.setString("token", apiResponse.accessToken.toString());
-
-
-        Fluttertoast.showToast(
-            msg:apiResponse.message.toString(),
-            toastLength: Toast.LENGTH_LONG,
-            gravity: ToastGravity.BOTTOM,
-            timeInSecForIosWeb: 1,
-            backgroundColor: Colors.black,
-            textColor: Colors.white,
-            fontSize: 16.0);
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) =>DashboardScreen()));
+        if(type == "login"){
+          prefs.setBool("isLogin", true);
+          prefs.setString("token", apiResponse.accessToken.toString());
+          Fluttertoast.showToast(
+              msg:apiResponse.message.toString(),
+              toastLength: Toast.LENGTH_LONG,
+              gravity: ToastGravity.BOTTOM,
+              timeInSecForIosWeb: 1,
+              backgroundColor: Colors.black,
+              textColor: Colors.white,
+              fontSize: 16.0);
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) =>DashboardScreen()));
+        }else {
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) =>LoginScreen()));
+        }
 
       }else{
 
@@ -70,6 +75,8 @@ class _OtpScreen extends State<OtpScreen> {
             backgroundColor: Colors.green,
             textColor: Colors.white,
             fontSize: 16.0);
+
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) =>LoginScreen()));
       }
 
       EasyLoading.dismiss();

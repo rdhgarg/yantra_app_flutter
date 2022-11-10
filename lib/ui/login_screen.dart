@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
         String phoneNo = apiResponse.mobile.toString();
 
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) =>OtpScreen(phoneNo)));
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) =>OtpScreen(phoneNo,"login")));
       } else {
         Fluttertoast.showToast(
             msg: apiResponse.message.toString(),

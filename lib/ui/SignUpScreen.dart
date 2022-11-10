@@ -67,7 +67,7 @@ class _SignUpScreen extends State<SignUpScreen> {
             fontSize: 16.0);
 
         String phoneNo = apiResponse.mobile.toString();
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) => OtpScreen(phoneNo)));
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) => OtpScreen(phoneNo,"register")));
 
       }else{
 
