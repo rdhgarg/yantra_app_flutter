@@ -29,14 +29,13 @@ class _SplashScreenState extends State<SplashScreen> {
   void _moveToNext(){
     Timer(const Duration(seconds: 3), () async {
       SharedPreferences prefs = await SharedPreferences.getInstance();
-     // userid = prefs.getString('userId');
       isLoginUser = (prefs.getBool('isLogin') ?? false);
       print('isLogin $isLoginUser');
       if(isLoginUser == false){
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
       }
       else{
-       // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => DashboardScreen()));
+
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
       }
     });
