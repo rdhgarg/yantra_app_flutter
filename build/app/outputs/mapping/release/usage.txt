@@ -12858,8 +12858,8 @@ com.google.firebase.encoders.proto.ProtobufValueEncoderContext:
     public com.google.firebase.encoders.ValueEncoderContext add(byte[])
 javax.inject.Inject
 com.google.common.base.Functions$FunctionForMapNoDefault
-kotlinx.coroutines.test.TestCoroutineContext
 com.google.firebase.annotations.PublicApi
+kotlinx.coroutines.test.TestCoroutineContext
 com.google.common.eventbus.package-info
 com.google.common.collect.MapMakerInternalMap$StrongKeyWeakValueEntry$Helper
 com.google.common.cache.LocalCache$AccessQueue$2
@@ -13208,8 +13208,8 @@ io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger:
     public void enableBufferingIncomingMessages()
     public void disableBufferingIncomingMessages()
 kotlinx.coroutines.flow.FlowKt__BuildersKt$asFlow$$inlined$unsafeFlow$5
-kotlinx.coroutines.flow.FlowKt__ReduceKt$first$3
 kotlinx.coroutines.flow.FlowKt__ZipKt$combineUnsafe$$inlined$unsafeFlow$1
+kotlinx.coroutines.flow.FlowKt__ReduceKt$first$3
 kotlin.sequences.SequencesKt___SequencesKt$flatMap$2
 kotlin.jvm.internal.ReflectionFactory:
     public kotlin.reflect.KClass createKotlinClass(java.lang.Class)
@@ -15150,8 +15150,8 @@ androidx.core.view.ViewCompat$AccessibilityViewProperty:
     private final int mContentChangeType
 kotlin.KotlinVersion:
     public static final kotlin.KotlinVersion$Companion Companion
+io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC:
     public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public static void $default$setMessageHandler(io.flutter.plugin.common.BinaryMessenger,java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
-io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC

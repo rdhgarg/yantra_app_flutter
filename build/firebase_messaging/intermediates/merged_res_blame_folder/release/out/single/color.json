@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_messaging\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_tint.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\29e832462ffe560be4e788d10234ed3e\\transformed\\jetified-play-services-base-18.0.1\\res\\color\\common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_messaging\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\29e832462ffe560be4e788d10234ed3e\\transformed\\jetified-play-services-base-18.0.1\\res\\color\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\flutter\\NumerologyYantra\\build\\firebase_messaging\\intermediates\\res\\merged\\release\\color\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Lenovo\\.gradle\\caches\\transforms-3\\29e832462ffe560be4e788d10234ed3e\\transformed\\jetified-play-services-base-18.0.1\\res\\color\\common_google_signin_btn_text_light.xml"
+    }
+]

@@ -3,6 +3,7 @@ class HomeListModel {
   bool? status;
   int? destiny;
   int? basic;
+  int? personalYearNum;
   List<int>? data;
   List<Desc>? desc;
 
@@ -12,6 +13,7 @@ class HomeListModel {
   status = json['status'];
   destiny = json['destiny'];
   basic = json['basic'];
+  personalYearNum = json['personal_year_no'];
   data = json['data'].cast<int>();
   if (json['desc'] != null) {
   desc = <Desc>[];
@@ -25,6 +27,7 @@ class HomeListModel {
   final Map<String, dynamic> data = new Map<String, dynamic>();
   data['status'] = this.status;
   data['destiny'] = this.destiny;
+  data['personal_year_no'] = this.personalYearNum;
   data['basic'] = this.basic;
   data['data'] = this.data;
   if (this.desc != null) {

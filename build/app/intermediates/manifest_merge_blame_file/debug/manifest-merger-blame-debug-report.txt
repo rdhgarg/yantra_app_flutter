@@ -9,14 +9,14 @@
 9        android:targetSdkVersion="31" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\flutter\NumerologyYantra\android\app\src\debug\AndroidManifest.xml:4:5-66
-11-->D:\flutter\NumerologyYantra\android\app\src\debug\AndroidManifest.xml:4:22-64
-12    <uses-permission android:name="android.permission.WAKE_LOCK" />
-12-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
-12-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-65
-13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
-13-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
+11-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:4:5-66
+11-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:5:5-79
+12-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
+13-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-65
 14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 14-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\ee61799a2c629608dff161ec92afa87c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:5-77
 14-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\ee61799a2c629608dff161ec92afa87c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:22-74

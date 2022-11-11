@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.numerology.yantra"
 4    android:versionCode="2"
-5    android:versionName="1.0.0" >
+5    android:versionName="1.0.2" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
@@ -11,14 +11,14 @@
 9-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:7:5-67
-11-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:7:22-64
-12    <uses-permission android:name="android.permission.WAKE_LOCK" />
-12-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:5-68
-12-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:22-65
-13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:5-79
-13-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:22-76
+11-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:4:5-66
+11-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:5:5-79
+12-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:5-68
+13-->[:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:22-65
 14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 14-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\ee61799a2c629608dff161ec92afa87c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:5-77
 14-->[com.google.firebase:firebase-messaging:23.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\ee61799a2c629608dff161ec92afa87c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:26:22-74
@@ -28,29 +28,29 @@
 16
 17    <application
 18        android:name="android.app.Application"
-18-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:7:9-42
+18-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:9:9-42
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.6.0] C:\Users\Lenovo\.gradle\caches\transforms-3\bf9a12b74d12139ff2cc033a689ace8b\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 20        android:icon="@mipmap/ic_launcher"
-20-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:8:9-43
+20-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:10:9-43
 21        android:label="Magical Square" >
-21-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:5:9-39
+21-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:8:9-39
 22        <activity
-22-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:10:9-30:20
+22-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:12:9-32:20
 23            android:name="com.numerology.yantra.MainActivity"
-23-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:11:13-41
+23-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:13:13-41
 24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-24-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:15:13-163
+24-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:17:13-163
 25            android:exported="true"
-25-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:12:13-36
+25-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:14:13-36
 26            android:hardwareAccelerated="true"
-26-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:16:13-47
+26-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:18:13-47
 27            android:launchMode="singleTop"
-27-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:13:13-43
+27-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:15:13-43
 28            android:theme="@style/LaunchTheme"
-28-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:14:13-47
+28-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:16:13-47
 29            android:windowSoftInputMode="adjustResize" >
-29-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:17:13-55
+29-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:19:13-55
 30
 31            <!--
 32                 Specifies an Android theme to apply to this Activity as soon as
@@ -59,21 +59,21 @@
 35                 to determine the Window background behind the Flutter UI.
 36            -->
 37            <meta-data
-37-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:22:13-25:17
+37-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:24:13-27:17
 38                android:name="io.flutter.embedding.android.NormalTheme"
-38-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:23:15-70
+38-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:25:15-70
 39                android:resource="@style/NormalTheme" />
-39-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:24:15-52
+39-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:26:15-52
 40
 41            <intent-filter>
-41-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:26:13-29:29
+41-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:28:13-31:29
 42                <action android:name="android.intent.action.MAIN" />
-42-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:27:17-68
-42-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:27:25-66
+42-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:29:17-68
+42-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:29:25-66
 43
 44                <category android:name="android.intent.category.LAUNCHER" />
-44-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:28:17-76
-44-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:28:27-74
+44-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:30:17-76
+44-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:30:27-74
 45            </intent-filter>
 46        </activity>
 47        <!--
@@ -81,11 +81,11 @@
 49             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 50        -->
 51        <meta-data
-51-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:33:9-35:33
+51-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:35:9-37:33
 52            android:name="flutterEmbedding"
-52-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:34:13-44
+52-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:36:13-44
 53            android:value="2" />
-53-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:35:13-30
+53-->D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:37:13-30
 54
 55        <service
 55-->[:firebase_auth] D:\flutter\NumerologyYantra\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19

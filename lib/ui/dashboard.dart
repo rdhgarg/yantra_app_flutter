@@ -9,6 +9,7 @@ import 'package:http/http.dart';
 import 'package:intl/intl.dart';
 import 'package:numerology_yantra/helper/api_helper.dart';
 import 'package:numerology_yantra/model/HomeListModel.dart';
+import 'package:numerology_yantra/ui/GenerateReportScreen.dart';
 import 'package:numerology_yantra/ui/login_screen.dart';
 import 'package:numerology_yantra/utils/AppColors.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -24,15 +25,8 @@ class _DashboardScreen extends State<DashboardScreen> {
   String outputDate = "";
   String outputDateShow = "";
   var _product_list = APIHelper.BASE_URL + "get-number";
-  var _get_report_list = APIHelper.BASE_URL + "get-report";
   List product_list = [];
   List product_list2 = [];
-  List category_list = [];
-  String strid ="";
-  String strdetailEng ="";
-  String strdetaiHindi ="";
-  String strBox ="";
-  String strNo ="";
   List product_list1 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"];
   late SharedPreferences prefs;
   bool firstBuild = true;
@@ -41,13 +35,15 @@ class _DashboardScreen extends State<DashboardScreen> {
   String strNumber = "";
   String destiny = "";
   String strBasicNo = "";
+  String personal_year_no = "";
   var deviceTypes = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
   Future<String> _homePageAPI(String dob, String number) async {
-    await EasyLoading.show(
-      status: 'loading...',
-      maskType: EasyLoadingMaskType.black,
-    );
+    EasyLoading.show(status: 'loading...');
+    // await EasyLoading.show(
+    //   status: 'loading...',
+    //   maskType: EasyLoadingMaskType.black,
+    // );
 
     prefs = await SharedPreferences.getInstance();
 
@@ -63,12 +59,13 @@ class _DashboardScreen extends State<DashboardScreen> {
     setState(() {
       if (apiResponse.status == true) {
         product_list = resBody['data'];
-        category_list = resBody['desc'];
 
-        //  currentSelectedValue = apiResponse.destiny.toString();
+
+
 
         destiny = apiResponse.destiny.toString();
         strBasicNo = apiResponse.basic.toString();
+        personal_year_no = apiResponse.personalYearNum.toString();
 
         print("NumberApi" + currentSelectedValue);
         print("===>>" + product_list.toString());
@@ -91,101 +88,16 @@ class _DashboardScreen extends State<DashboardScreen> {
     return "Success";
   }
 
-  Future<String> _homePageAPI1(String dob, String number) async {
-    await EasyLoading.show(
-      status: 'loading...',
-      maskType: EasyLoadingMaskType.black,
-    );
-
-    prefs = await SharedPreferences.getInstance();
-
-    var response = await post(Uri.parse(_product_list), headers: {
-      'Authorization': 'Bearer ${prefs.getString("token")}',
-    }, body: {
-      'dob': dob,
-      'number': number
-    });
-
-    var resBody = json.decode(response.body.toString());
-    final apiResponse = HomeListModel.fromJson(resBody);
-    setState(() {
-      if (apiResponse.status == true) {
-        product_list2 = resBody['data'];
-        category_list = resBody['desc'];
-
-        print("NumberApi" + currentSelectedValue);
-        print("===>>" + product_list2.toString());
-        print("===>>ALPHA" + product_list1.toString());
-        print('product.len===>> ${product_list2.length}');
-
-      } else {
-        Fluttertoast.showToast(
-            msg: "server error",
-            toastLength: Toast.LENGTH_SHORT,
-            gravity: ToastGravity.BOTTOM,
-            timeInSecForIosWeb: 1,
-            backgroundColor: Colors.green,
-            textColor: Colors.white,
-            fontSize: 16.0);
-      }
-    });
-    await EasyLoading.dismiss();
-    print('response:${apiResponse.status}');
-    return "Success";
-  }
 
 
-  // Future<String> _GetReportAPI(String box, String num) async {
-  //   await EasyLoading.show(
-  //     status: 'loading...',
-  //     maskType: EasyLoadingMaskType.black,
-  //   );
-  //
-  //   prefs = await SharedPreferences.getInstance();
-  //
-  //   var response = await post(Uri.parse(_get_report_list), headers: {
-  //     'Authorization': 'Bearer ${prefs.getString("token")}',
-  //   }, body: {
-  //     'box': box,
-  //     'number': num
-  //   });
-  //
-  //   var resBody = json.decode(response.body.toString());
-  //   final apiResponse = GenerateReport.fromJson(resBody);
-  //   setState(() {
-  //     if (apiResponse.status == true) {
-  //       strid = apiResponse.data!.id.toString();
-  //       strBox = apiResponse.data!.box.toString();
-  //       strNo = apiResponse.data!.no.toString();
-  //       strdetailEng = apiResponse.data!.detail.toString();
-  //       strdetaiHindi = apiResponse.data!.detailHindi.toString();
-  //       print("strid===>>" + strid);
-  //       _showDetailPopup(strBox,strNo,strdetailEng,strdetaiHindi);
-  //
-  //     } else {
-  //       Fluttertoast.showToast(
-  //           msg: "server error",
-  //           toastLength: Toast.LENGTH_SHORT,
-  //           gravity: ToastGravity.BOTTOM,
-  //           timeInSecForIosWeb: 1,
-  //           backgroundColor: Colors.green,
-  //           textColor: Colors.white,
-  //           fontSize: 16.0);
-  //     }
-  //   });
-  //   await EasyLoading.dismiss();
-  //   print('response:${apiResponse.status}');
-  //   return "Success";
-  // }
+
 
   int getLength() {
     return product_list.length;
   }
 
 
-  int getLength2() {
-    return product_list2.length;
-  }
+
 
   @override
   void initState() {
@@ -196,7 +108,7 @@ class _DashboardScreen extends State<DashboardScreen> {
     final DateTime? picked = await  showDatePicker(
       context: context,
       initialDate: selectedDate,
-      firstDate: DateTime(1950),
+      firstDate: DateTime(1901),
       lastDate: DateTime.now(),
       //lastDate: DateTime(2025),
       helpText: "SELECT DATE",
@@ -238,8 +150,7 @@ class _DashboardScreen extends State<DashboardScreen> {
 
         var outputFormat = DateFormat('ddMMyyyy');
         outputDate = outputFormat.format(inputDate);
-        print("OUtPUT DATE==>>" +
-            outputDate); // 12/31/2000 11:59 PM <-- MM/dd 12H format
+        print("OUtPUT DATE==>>" + outputDate); // 12/31/2000 11:59 PM <-- MM/dd 12H format
 
         var outputFormat1 = DateFormat('dd-MM-yyyy');
         outputDateShow = outputFormat1.format(inputDate);
@@ -261,9 +172,7 @@ class _DashboardScreen extends State<DashboardScreen> {
     }
   }
 
-  int getLengthDetailCategory() {
-    return category_list.length;
-  }
+
 
 
 
@@ -348,8 +257,9 @@ class _DashboardScreen extends State<DashboardScreen> {
                   color: AppColors.mainGreen,
                   child: Row(
                     children: [
+
                       SizedBox(
-                        width: 10,
+                        width: 25,
                       ),
 
                       Expanded(
@@ -429,6 +339,8 @@ class _DashboardScreen extends State<DashboardScreen> {
                         Card(
                           elevation: 10,
                           child :Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
                                 margin: EdgeInsets.only(top: 20,right: 15),
@@ -461,6 +373,13 @@ class _DashboardScreen extends State<DashboardScreen> {
                                 ),
                               ),
 
+                              Container(
+                                margin: EdgeInsets.only(top: 10,left: 20),
+                                child: Text('Personal Yantra Number : $personal_year_no',style: TextStyle(
+                                    fontSize: 16,
+                                    color: AppColors.black,
+                                    fontWeight: FontWeight.w800)),
+                              ),
 
                               Container(
                                 margin: EdgeInsets.only(left: 20, right: 20, top: 20,bottom: 20),
@@ -510,15 +429,7 @@ class _DashboardScreen extends State<DashboardScreen> {
 
                                           ),
                                           onTap: () {
-                                            // if(product_list1[index].toString() == "E" || product_list1[index].toString() == "F" || product_list1[index].toString() == "I"
-                                            //     || product_list1[index].toString() == "J" || product_list1[index].toString() == "L"||product_list1[index].toString() == "M"
-                                            //     ||product_list1[index].toString() == "O" || product_list1[index].toString() == "P"){
-                                            //   print("VALUE==>>"+ product_list[index].toString());
-                                            //   print("ALPHABET==>>"+ product_list1[index].toString());
-                                            //   _GetReportAPI(product_list1[index].toString(),product_list[index].toString());
-                                            // }else{
-                                            //
-                                            // }
+
                                           },
                                         );
 
@@ -538,272 +449,32 @@ class _DashboardScreen extends State<DashboardScreen> {
                           height: 20.0,
                         ),
 
-                        Card(
-                          elevation: 10,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Container(
 
-                                margin: EdgeInsets.only(top: 20),
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      width: 20,
-                                    ),
-                                    Text("Desired Number: ",
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            color: AppColors.black,
-                                            fontWeight: FontWeight.w800)),
-                                    SizedBox(
-                                      width: 20,
-                                    ),
-                                    Text(currentSelectedValue,
-                                        style: TextStyle(
-                                            fontSize: 16,
-                                            color: AppColors.black,
-                                            fontWeight: FontWeight.w600)),
-
-
-                                    Container(
-
-                                      child: DropdownButtonHideUnderline(
-
-                                        child: DropdownButton<String>(
-                                          isExpanded: false,
-                                          isDense: true,
-                                          onChanged: (newValue) {
-                                            setState(() {
-                                              currentSelectedValue = newValue.toString();
-                                              _homePageAPI1(outputDate, currentSelectedValue);
-                                            });
-                                          },
-                                          items: deviceTypes.map((String value) {
-                                            return DropdownMenuItem<String>(
-                                              value: value,
-                                              // child: Text(value),
-
-                                              child: Column(
-                                                children: [
-                                                  Text(value),
-                                                  // Text("(Job, Promotion ,Leadership,Health,Study,Opportunities)",),
-                                                  SizedBox(height:10)
-                                                ],
-                                              ),
-                                            );
-                                          }).toList(),
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 5,
-                                    ),
-                                  ],
+                        Center(
+                          child: Container(
+                              margin: EdgeInsets.only(top: 30),
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  primary: Color(0xFFA3D133),
+                                  onPrimary: Colors.white,
+                                  elevation: 3,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(50.0)),
+                                  minimumSize: Size(180, 50), //////// HERE
                                 ),
-                              ),
-
-
-                              Container(
-                                color: Colors.white,
-                                padding: EdgeInsets.all(20.0),
-                                child: Table(
-
-                                  columnWidths: {
-                                    0: FlexColumnWidth(1),
-                                    1: FlexColumnWidth(4),
-
-                                  },
-                                  border: TableBorder.all(color: Colors.black),
-
-                                  children: [
-                                    TableRow(children: [
-
-
-                                      Text(' 1', style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),),
-                                      Text(' Job, Promotion ,Leadership,Health,Study,Opportunities',style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold)),
-
-                                    ]),
-                                    TableRow(children: [
-                                      Text(' 2',style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),),
-                                      Text(' Marriage Love Marriage' ,style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold)),
-
-                                    ]),
-
-                                    TableRow(children: [
-                                      Text(' 3',style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),),
-                                      Text(' Relaxation,Health' ,style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold)),
-
-                                    ]),
-
-
-                                    TableRow(children: [
-                                      Text(' 4',style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),),
-                                      Text(' Avoid!!' ,style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold)),
-
-                                    ]),
-
-                                    TableRow(children: [
-                                      Text(' 5',style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),),
-                                      Text(' Advanture Foreign,Look After the World,Health' ,style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold)),
-
-                                    ]),
-
-                                    TableRow(children: [
-                                      Text(' 6',style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),),
-                                      Text(' Marriage, Baby Plan, Saas Bahu/ In laws Problem' ,style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold)),
-
-                                    ]),
-
-
-                                    TableRow(children: [
-                                      Text(' 7',style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),),
-                                      Text(' Spiritualism' ,style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold)),
-
-                                    ]),
-
-
-                                    TableRow(children: [
-                                      Text(' 8',style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),),
-                                      Text(' Money Yantra' ,style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold)),
-
-                                    ]),
-
-
-                                    TableRow(children: [
-                                      Text(' 9',style: TextStyle(
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.bold),),
-                                      Text(' Army, Police, Sports' ,style: TextStyle(
-                                          fontSize: 14,
-                                          fontWeight: FontWeight.bold)),
-
-                                    ]),
-                                  ],
-                                ),
-                              ),
-
-
-
-                              SizedBox(height: 20,),
-
-
-                              Container(
-                                margin: EdgeInsets.only(left: 20,top: 10),
-                                child:  getChildForIndex(currentSelectedValue),
-                              ),
-
-
-                              Container(
-                                margin: EdgeInsets.only(left: 20, right: 20, top: 20,bottom: 20),
-                                child: Container(
-                                  child: GridView.count(
-                                      shrinkWrap: true,
-                                      crossAxisCount: 4,
-                                      crossAxisSpacing: 4.0,
-                                      mainAxisSpacing: 4.0,
-                                      physics: const NeverScrollableScrollPhysics(),
-                                      children: List.generate(getLength2(), (index) {
-                                        return InkWell(
-                                          child: Container(
-                                            color: setColor(index),
-                                            child:  Stack(
-                                              children: [
-                                                Container(
-                                                  child: Center(
-                                                    child: Text(
-                                                      product_list2[index].toString(),
-                                                      style: TextStyle(
-                                                          fontSize: 24,
-                                                          color: Colors.white,
-                                                          fontWeight: FontWeight.bold),
-                                                    ),
-                                                  ),
-
-                                                ),
-                                                Visibility(
-                                                  visible:false,
-                                                  child: Container(
-                                                    margin:EdgeInsets.all(5),
-                                                    child: Align(
-                                                      alignment: FractionalOffset.bottomRight,
-                                                      child: Text(
-                                                        product_list1[index].toString(),
-                                                        style: TextStyle(
-                                                            fontSize: 14,
-                                                            fontWeight: FontWeight.bold),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-
-                                              ],
-                                            ),
-
-                                          ),
-                                          onTap: () {
-                                            // if(product_list1[index].toString() == "E" || product_list1[index].toString() == "F" || product_list1[index].toString() == "I"
-                                            //     || product_list1[index].toString() == "J" || product_list1[index].toString() == "L"||product_list1[index].toString() == "M"
-                                            //     ||product_list1[index].toString() == "O" || product_list1[index].toString() == "P"){
-                                            //   print("VALUE==>>"+ product_list[index].toString());
-                                            //   print("ALPHABET==>>"+ product_list1[index].toString());
-                                            //   _GetReportAPI(product_list1[index].toString(),product_list[index].toString());
-                                            // }else{
-                                            //
-                                            // }
-                                          },
-                                        );
-
-                                      })),
-                                ),
-                              ),
-
-                            ],
-                          ),
+                                onPressed: () {
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context) =>GenerateReportScreen(outputDate)));
+                                },
+                                child: Text('Submit',
+                                    style: TextStyle(fontSize: 18, color: Colors.white)),
+                              )),
                         ),
 
-                        SizedBox(height: 20),
-                        Container(
-                          margin: EdgeInsets.only(left: 15,right: 15),
-                          child:  _detailListWidget(),
+                        SizedBox(
+                          height: 20.0,
                         ),
 
-                        SizedBox(height: 20),
+
 
                       ],
                     ),
@@ -821,97 +492,8 @@ class _DashboardScreen extends State<DashboardScreen> {
   }
 
 
-  Widget _detailListWidget(){
-
-    return MediaQuery.removePadding(
-        context: context,
-        removeTop: true,
-        child:ListView.builder(
-          physics: NeverScrollableScrollPhysics(),
-          shrinkWrap: true,
-          itemCount: getLengthDetailCategory(),
-          itemBuilder: _detailListItemBuilder,
-        )
-    );
-  }
-
-  Widget _detailListItemBuilder(BuildContext context, int index) {
-
-    return InkWell(
-      child: GestureDetector(
-        onTap: () {
-
-        },
-        child: Card(
-          elevation: 10,
-          child: InkWell(
-            child: Container(
-              padding: EdgeInsets.only(
-                  left: 10, right: 10, top: 10, bottom: 10),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Row(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.only(left: 18),
-                        child: Text("Box :",
-                            style: TextStyle(
-                                fontSize: 18,
-                                color: AppColors.black,
-                                fontWeight: FontWeight.w600)),
-
-                      ),
-
-                      Expanded(
-                        child: Container(
-                          margin: EdgeInsets.only(left: 5),
-                          child: Text(category_list[index]['box_name'],
-                              style: TextStyle(
-                                  fontSize: 16,
-                                  color: AppColors.black,
-                                  fontWeight: FontWeight.w400)),
-                        ),
-                      ),
-                    ],
-                  ),
-
-                  SizedBox(height: 10,),
-                  Container(
-                    margin: EdgeInsets.only(left: 18),
-                    child: Text(category_list[index]['detail'],
-                        style: TextStyle(
-                            fontSize: 16,
-                            color: AppColors.black,
-                            fontWeight: FontWeight.w400)),
-                  ),
 
 
-
-                  SizedBox(height: 10,),
-
-                  Container(
-                    margin: EdgeInsets.only(left: 18),
-                    child: Text(category_list[index]['detail_hindi'],
-                        style: TextStyle(
-                            fontSize: 16,
-                            color: AppColors.black,
-                            fontWeight: FontWeight.w400)),
-                  ),
-
-
-                  SizedBox(height: 20,)
-
-                ],
-              ),
-
-            ),
-          ),
-        ),
-      ),
-    );
-  }
 
   Future<void> _showLogoutMessagePopup(String msg) async {
     return showDialog<void>(
@@ -928,8 +510,8 @@ class _DashboardScreen extends State<DashboardScreen> {
                       style: TextStyle(color: Colors.black))),
               GestureDetector(
                 onTap: () {
-                  Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute( builder: (ctx) => LoginScreen()), (route) => false);
-                  // Navigator.pop(context);
+
+                   Navigator.pop(context);
                 },
                 child: Image.asset(
                   "assets/icons/ic_close.png",
@@ -958,10 +540,11 @@ class _DashboardScreen extends State<DashboardScreen> {
                           await SharedPreferences.getInstance();
                           prefs.clear();
                           Navigator.pop(context);
-                          Navigator.pushReplacement(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const LoginScreen()));
+                          // Navigator.pushReplacement(
+                          //     context,
+                          //     MaterialPageRoute(
+                          //         builder: (context) => const LoginScreen()));
+                          Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute( builder: (ctx) => LoginScreen()), (route) => false);
                         },
                         child: Container(
                             width: 80,
@@ -993,121 +576,7 @@ class _DashboardScreen extends State<DashboardScreen> {
   }
 
 
-  Future<void> _showDetailPopup(String strBox,String strNo,strdetailEng,String strdetaiHindi ) async {
-    return showDialog<void>(
-      context: context,
-      barrierDismissible: false, // user must tap button!
-      builder: (BuildContext context) {
-        return AlertDialog(
 
-          title: Stack(
-            children: [
-              Center(
-                  child: Text('Report',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: AppColors.mainGreen))),
-
-            ],
-          ),
-          content: SingleChildScrollView(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-
-                Text('Box',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: AppColors.black,fontSize: 14)),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(strBox,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: AppColors.black,fontSize: 16,fontWeight: FontWeight.w400)),
-
-
-                SizedBox(
-                  height: 10,
-                ),
-
-                Container(
-                  color: Colors.grey,
-                  width: MediaQuery.of(context).size.width,
-                  height: 1,
-                ),
-
-                SizedBox(
-                  height: 10,
-                ),
-                Text('Number',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: AppColors.black,fontSize: 14)),
-                SizedBox(
-                  height: 10,
-                ),
-                Text(strNo,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: AppColors.black,fontSize: 16,fontWeight: FontWeight.w400)),
-                SizedBox(
-                  height: 10,
-                ),
-
-                Container(
-                  color: Colors.grey,
-                  width: MediaQuery.of(context).size.width,
-                  height: 1,
-                ),
-                SizedBox(
-                  height: 10,
-                ),
-
-                Text(strdetailEng,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: AppColors.black,fontSize: 14,fontWeight: FontWeight.w400)),
-                SizedBox(
-                  height: 10,
-                ),
-
-
-                Text(strdetaiHindi,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: AppColors.black,fontSize: 14,fontWeight: FontWeight.w400)),
-                SizedBox(
-                  height: 10,
-                ),
-
-                GestureDetector(
-                  onTap: () async {
-                    Navigator.pop(context);
-                  },
-                  child: Center(
-                    child: Container(
-                        width: 80,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          borderRadius:
-                          BorderRadius.all(Radius.circular(10)),
-                          color: AppColors.mainGreen,
-                        ),
-                        child: Center(
-                            child: Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Text('Close',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.white,
-                                      fontSize: 16)),
-                            ))),
-                  ),
-                ),
-              ],
-
-            ),
-          ),
-        );
-      },
-    );
-  }
 
   Future<void> _showFirstTimePopup(String msg) async {
     return showDialog<void>(

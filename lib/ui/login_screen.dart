@@ -69,11 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
         prefs.setString("android_token", android_token);
         prefs.setBool("isLogin", true);
-        /*prefs.setString("userId", apiResponse.data!.id.toString());
-        prefs.setString("name", apiResponse.data!.name.toString());
-        prefs.setString("email", apiResponse.data!.email.toString());
-        prefs.setString("number", apiResponse.data!.mobileNo.toString());
-        prefs.setString("image", apiResponse.data!.profileImage.toString());*/
+
         prefs.setString("token", apiResponse.accessToken.toString());
 
 

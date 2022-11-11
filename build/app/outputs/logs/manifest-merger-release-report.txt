@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 application
-INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:4:4-36:19
+INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:7:4-38:19
 MERGED from [:firebase_auth] D:\flutter\NumerologyYantra\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_auth] D:\flutter\NumerologyYantra\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:11:5-44:19
@@ -46,17 +46,17 @@ MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] C:\Users\Lenovo\.gradle\caches\transforms-3\bf9a12b74d12139ff2cc033a689ace8b\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:5:9-39
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:8:9-39
 	android:icon
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:8:9-43
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:10:9-43
 	android:name
 		INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:7:9-42
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:9:9-42
 manifest
-ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-37:12
-INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-37:12
-INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-37:12
-INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-37:12
+ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-39:12
 MERGED from [:shared_preferences_android] D:\flutter\NumerologyYantra\build\shared_preferences_android\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_auth] D:\flutter\NumerologyYantra\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:2:1-46:12
@@ -108,23 +108,55 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Lenovo\.gradle\c
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Lenovo\.gradle\caches\transforms-3\7b2fd634cb0a4a99ef455f8d1e5cec83\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Lenovo\.gradle\caches\transforms-3\eacf712361d032aee094ffe67e458bdd\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\6f30d7bc8a21c279daba7db1d2b5822e\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-37:12
-INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-37:12
-INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-37:12
+INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-39:12
+INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-39:12
 	package
 		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:2:5-36
 		INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-37:12
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-39:12
 		INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-37:12
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:1-39:12
 		INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:4:5-66
+MERGED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:7:5-67
+MERGED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:7:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\fdc18ef6915b11c7a15e886c056079fc\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\fdc18ef6915b11c7a15e886c056079fc\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\8f7ba55b145a47dc660f33285545959b\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\8f7ba55b145a47dc660f33285545959b\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\69d41e5fda4b8c4338447d982e31b472\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\69d41e5fda4b8c4338447d982e31b472\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\5a27ac89abe45a101a1886786335eae1\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\5a27ac89abe45a101a1886786335eae1\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:5:5-79
+MERGED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:5-79
+MERGED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\fdc18ef6915b11c7a15e886c056079fc\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\fdc18ef6915b11c7a15e886c056079fc\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\ee61799a2c629608dff161ec92afa87c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\ee61799a2c629608dff161ec92afa87c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\8f7ba55b145a47dc660f33285545959b\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\8f7ba55b145a47dc660f33285545959b\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\69d41e5fda4b8c4338447d982e31b472\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\69d41e5fda4b8c4338447d982e31b472\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\5a27ac89abe45a101a1886786335eae1\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\5a27ac89abe45a101a1886786335eae1\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\d2dde68e22d034e6688719b1584218f4\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\d2dde68e22d034e6688719b1584218f4\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:5:22-76
 uses-sdk
 INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
@@ -242,43 +274,43 @@ INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.x
 		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml
 activity#com.numerology.yantra.MainActivity
-ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:10:9-30:20
+ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:12:9-32:20
 	android:launchMode
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:13:13-43
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:15:13-43
 	android:hardwareAccelerated
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:16:13-47
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:18:13-47
 	android:windowSoftInputMode
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:17:13-55
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:19:13-55
 	android:exported
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:12:13-36
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:14:13-36
 	android:configChanges
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:15:13-163
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:17:13-163
 	android:theme
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:14:13-47
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:16:13-47
 	android:name
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:11:13-41
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:13:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:22:13-25:17
+ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:24:13-27:17
 	android:resource
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:24:15-52
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:26:15-52
 	android:name
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:23:15-70
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:25:15-70
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:26:13-29:29
+ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:28:13-31:29
 action#android.intent.action.MAIN
-ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:27:17-68
+ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:29:17-68
 	android:name
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:28:17-76
+ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:30:17-76
 	android:name
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:30:27-74
 meta-data#flutterEmbedding
-ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:33:9-35:33
+ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:35:9-37:33
 	android:value
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:35:13-30
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:37:13-30
 	android:name
-		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:34:13-44
+		ADDED from D:\flutter\NumerologyYantra\android\app\src\main\AndroidManifest.xml:36:13-44
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_auth] D:\flutter\NumerologyYantra\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:33:9-37:19
@@ -309,18 +341,6 @@ ADDED from [:firebase_auth] D:\flutter\NumerologyYantra\build\firebase_auth\inte
 		ADDED from [:firebase_auth] D:\flutter\NumerologyYantra\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_auth] D:\flutter\NumerologyYantra\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
-uses-permission#android.permission.INTERNET
-ADDED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:7:5-67
-MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\fdc18ef6915b11c7a15e886c056079fc\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\fdc18ef6915b11c7a15e886c056079fc\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\8f7ba55b145a47dc660f33285545959b\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
-MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\8f7ba55b145a47dc660f33285545959b\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\69d41e5fda4b8c4338447d982e31b472\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\69d41e5fda4b8c4338447d982e31b472\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\5a27ac89abe45a101a1886786335eae1\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:26:5-67
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\5a27ac89abe45a101a1886786335eae1\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:26:5-67
-	android:name
-		ADDED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\ee61799a2c629608dff161ec92afa87c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:27:5-68
@@ -329,22 +349,6 @@ MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Use
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\69d41e5fda4b8c4338447d982e31b472\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:9:5-68
 	android:name
 		ADDED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:22-65
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:5-79
-MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\fdc18ef6915b11c7a15e886c056079fc\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-auth:21.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\fdc18ef6915b11c7a15e886c056079fc\transformed\jetified-firebase-auth-21.0.6\AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-messaging:23.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\ee61799a2c629608dff161ec92afa87c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-messaging:23.0.6] C:\Users\Lenovo\.gradle\caches\transforms-3\ee61799a2c629608dff161ec92afa87c\transformed\jetified-firebase-messaging-23.0.6\AndroidManifest.xml:25:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\8f7ba55b145a47dc660f33285545959b\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
-MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\8f7ba55b145a47dc660f33285545959b\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\69d41e5fda4b8c4338447d982e31b472\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\69d41e5fda4b8c4338447d982e31b472\transformed\jetified-play-services-cloud-messaging-17.0.1\AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\5a27ac89abe45a101a1886786335eae1\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\5a27ac89abe45a101a1886786335eae1\transformed\jetified-transport-backend-cct-3.1.6\AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\d2dde68e22d034e6688719b1584218f4\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] C:\Users\Lenovo\.gradle\caches\transforms-3\d2dde68e22d034e6688719b1584218f4\transformed\jetified-transport-runtime-3.1.6\AndroidManifest.xml:22:5-79
-	android:name
-		ADDED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:22-76
 service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
 ADDED from [:firebase_messaging] D:\flutter\NumerologyYantra\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:12:9-15:72
 	android:exported
