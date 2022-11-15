@@ -26,14 +26,22 @@
       <sourceFolder url="file://C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_android-2.0.12/android/src/main/java" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/aidl_source_output_dir/debug/out" />
-    <content url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/ap_generated_sources/debug/out" />
+    <content url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/ap_generated_sources/debug/out">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/ap_generated_sources/debug/out" isTestSource="false" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/renderscript_source_output_dir/debug/out" />
-    <content url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/res/resValues/debug" />
+    <content url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/res/resValues/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/res/resValues/debug" type="java-resource" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/res/rs/debug" />
-    <content url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/source/buildConfig/debug" />
+    <content url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/source/buildConfig/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../../build/shared_preferences_android/generated/source/buildConfig/debug" isTestSource="false" generated="true" />
+    </content>
     <orderEntry type="jdk" jdkName="Android API 31 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-5e9e0e0aa8be4ff69facadd706b713f0bb54d5b3" level="project" />
+    <orderEntry type="library" name="Gradle: io.flutter:flutter_embedding_debug:1.0.0-857bd6b74c5eb56151bfafe91e7fa6a82b6fee25" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common-java8:2.2.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.lifecycle:lifecycle-common:2.2.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />

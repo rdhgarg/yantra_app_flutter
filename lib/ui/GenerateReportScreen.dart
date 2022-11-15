@@ -14,7 +14,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class GenerateReportScreen extends StatefulWidget {
   String outputDate = "";
 
-  GenerateReportScreen(this.outputDate) ;
+  GenerateReportScreen(this.outputDate);
 
   @override
   State<StatefulWidget> createState() => _GenerateReportScreen(this.outputDate);
@@ -94,11 +94,6 @@ class _GenerateReportScreen extends State<GenerateReportScreen> {
 
   Future<String> _homePageAPI1(String dob, String number) async {
     EasyLoading.show(status: 'loading...');
-    // await EasyLoading.show(
-    //   status: 'loading...',
-    //    maskType: EasyLoadingMaskType.black,
-    // );
-
     prefs = await SharedPreferences.getInstance();
 
     var response = await post(Uri.parse(_product_list), headers: {
@@ -184,8 +179,7 @@ class _GenerateReportScreen extends State<GenerateReportScreen> {
       i = "Army, Police, Sports";
     }
 
-    return Text(i,
-        style: TextStyle(
+    return Text(i,style: TextStyle(
             fontSize: 16,
             color: AppColors.black,
             fontWeight: FontWeight.w600));
@@ -250,41 +244,7 @@ class _GenerateReportScreen extends State<GenerateReportScreen> {
                     child: Column(
                       children: <Widget>[
 
-                        // Container(
-                        //   child: Row(
-                        //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        //     children: [
-                        //       SizedBox(
-                        //         width: 5,
-                        //       ),
-                        //       Text("Date of Birth:",
-                        //           style: TextStyle(
-                        //               fontSize: 16,
-                        //               color: AppColors.mainGreen,
-                        //               fontWeight: FontWeight.w800)),
-                        //       Text(outputDateShow,
-                        //           style: TextStyle(fontSize: 16, color: Colors.black)),
-                        //       ElevatedButton(
-                        //         onPressed: () => _selectDate(context),
-                        //         child: Text('Change date',
-                        //             style: TextStyle(
-                        //                 fontSize: 14,
-                        //                 color: Colors.white,
-                        //                 fontWeight: FontWeight.w500)),
-                        //
-                        //         style: ElevatedButton.styleFrom(
-                        //             primary: AppColors.mainGreen,
-                        //             padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                        //             textStyle: TextStyle(
-                        //                 fontSize: 30,
-                        //                 fontWeight: FontWeight.bold)),
-                        //       ),
-                        //       SizedBox(
-                        //         width: 5,
-                        //       ),
-                        //     ],
-                        //   ),
-                        // ),
+
 
                         Card(
                           elevation: 10,

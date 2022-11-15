@@ -10866,9 +10866,9 @@ com.google.android.datatransport.runtime.backends.CreationContext:
     public static com.google.android.datatransport.runtime.backends.CreationContext create(android.content.Context,com.google.android.datatransport.runtime.time.Clock,com.google.android.datatransport.runtime.time.Clock)
     private static final java.lang.String DEFAULT_BACKEND_NAME
 kotlinx.coroutines.flow.FlowKt__ReduceKt$single$$inlined$collect$1
-io.flutter.embedding.engine.systemchannels.PlatformChannel:
-    private static final java.lang.String TAG
 io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
+    private static final java.lang.String TAG
+io.flutter.embedding.engine.systemchannels.PlatformChannel:
     private static final java.lang.String TAG
 com.google.common.collect.Multisets$FilteredMultiset$1
 com.google.android.gms.common.server.response.zam
@@ -15150,8 +15150,8 @@ androidx.core.view.ViewCompat$AccessibilityViewProperty:
     private final int mContentChangeType
 kotlin.KotlinVersion:
     public static final kotlin.KotlinVersion$Companion Companion
-io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC:
     public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
     public static void $default$setMessageHandler(io.flutter.plugin.common.BinaryMessenger,java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
 io.flutter.plugin.platform.PlatformView$-CC
+io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
