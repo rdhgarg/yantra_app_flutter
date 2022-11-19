@@ -1,12 +1,9 @@
 import 'dart:async';
 import 'package:flutter/services.dart';
-import 'package:numerology_yantra/ui/dashboard.dart';
 import 'package:numerology_yantra/ui/login_screen.dart';
 import 'package:numerology_yantra/utils/AppColors.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
-
-
 
 
 class SplashScreen extends StatefulWidget {
@@ -18,10 +15,9 @@ class SplashScreen extends StatefulWidget {
 
 }
 
+
 class _SplashScreenState extends State<SplashScreen> {
 
-  String APP_STORE_URL = 'https://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftwareUpdate?id=com.homeservices.bubdiuser&mt=8';
-  String PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.homeservices.bubdiuser';
   late bool isLoginUser;
 
 
@@ -35,7 +31,6 @@ class _SplashScreenState extends State<SplashScreen> {
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
       }
       else{
-
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginScreen()));
       }
     });
@@ -100,8 +95,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
               Image.asset("assets/images/applogo1.png",fit: BoxFit.fill,
                   width: MediaQuery.of(context).size.width * 0.80,
-                height: MediaQuery.of(context).size.height * 0.50,
-
+                  height: MediaQuery.of(context).size.height * 0.50,
 
               ),
 
